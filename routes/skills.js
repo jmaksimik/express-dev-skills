@@ -5,6 +5,10 @@ const skillController = require('../controllers/skills');
 
 /* GET users listing. */
 router.get('/', skillController.index);
-router.get('/:id', skillController.show)
+router.get('/new', skillController.new);
+router.get('/:id', skillController.show);
+router.post('/', skillController.create);
+router.delete('/:id', skillController.delete);
+router.put('/:id', skillController.update)
 
 module.exports = router;

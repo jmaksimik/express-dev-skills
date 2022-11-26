@@ -7,8 +7,20 @@ const skills = [
 
 module.exports = {
     getAll,
-    getOne
+    getOne,
+    create,
+    deleteCurrent,
+    updateCurrent
 };
+
+function updateCurrent(skill) {
+   return skills.skill = skill;
+};
+
+function deleteCurrent(id) {
+    const idx = skills.findIndex(skill => skill.id === parseInt(id));
+    skills.splice(idx, 1);
+}
 
 function getAll() {
     return skills
@@ -16,4 +28,9 @@ function getAll() {
 
 function getOne(id) {
     return skills.find(skill => skill.id === parseInt(id));
+}
+
+function create(skill) {
+    skill.id = skills.length + 1;
+    skills.push(skill);
 }

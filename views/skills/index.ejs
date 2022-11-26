@@ -8,11 +8,12 @@
     <title>John's Developer Skills</title>
 </head>
 <body>
-    <h1>Skills</h1>
+    <h1>John's DeveloperSkills</h1>
+    <a href="/skills/new">Add Skill</a>
     <ul>
         <% skills.forEach(function(s) { %>
             <li>
-                <%= s.skill  %> 
+                <a href="/skills/<%=s.id%>"><%= s.skill  %></a>  
             </li>
          
         <% }) %> 
