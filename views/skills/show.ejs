@@ -14,10 +14,9 @@
         class="delete-form" method="POST">
         <button type="submit">Delete Skill</button>
     </form>
-    <form action="/skills/<%= skill.id %>?_method=PUT"
-        class="edit-form" method="POST">
+    <a href="/skills/<%= skill.id%>/edit">
         <button type="submit">Edit Skill</button>
-    </form>
+    </a>
     
 </body>
 </html>

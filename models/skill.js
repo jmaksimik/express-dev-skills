@@ -10,11 +10,12 @@ module.exports = {
     getOne,
     create,
     deleteCurrent,
-    updateCurrent
+    update
 };
 
-function updateCurrent(skill) {
-   return skills.skill = skill;
+function update(body, id) {
+    const updatedBody = skills.find(skill => skill.id === parseInt(id));
+    updatedBody.skill = body.skill; 
 };
 
 function deleteCurrent(id) {
