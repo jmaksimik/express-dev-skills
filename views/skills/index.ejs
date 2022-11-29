@@ -5,18 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='/stylesheets/style.css' />
-    <title>John's Developer Skills</title>
+    <title>Home</title>
 </head>
 <body>
-    <h1>John's DeveloperSkills</h1>
-    <a href="/skills/new">Add Skill</a>
-    <ul>
-        <% skills.forEach(function(s) { %>
-            <li>
-                <a href="/skills/<%=s.id%>"><%= s.skill  %></a>  
-            </li>
+    <main>
+        <h1>John's Developer Skills</h1>
+        <div id="add-skill">
+            <a id="add-skill" href="/skills/new">Add Skill</a>
+        </div>
+      
+        <ul>
+            <% skills.forEach(function(s) { %>
+                <li>
+                    <a href="/skills/<%=s.id%>"><%= s.skill  %></a>  
+                </li>
          
         <% }) %> 
-    </ul>
+        </ul>
+
+    </main>
+    
 </body>
 </html>

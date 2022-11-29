@@ -18,7 +18,7 @@ function updateSkill(req, res) {
 
 function showEdit(req, res) {
     const skillFromDB = Skill.getOne(req.params.id);
-    res.render('skills/:id/edit', {skill: skillFromDB});
+    res.render('skills/edit', {skill: skillFromDB});
 }
 
 function deleteSkill(req, res) {

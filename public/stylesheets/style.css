@@ -1,8 +1,71 @@
 body {
-  padding: 50px;
+  margin: 0;
+  height: 100vh;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-color: #80C8A6;
+}
+
+main {
+  display: flex;
+  grid-column-start: 2;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+h1 {
+  text-align: center;
+  width: 400px;
+  padding: 50px;
+  font-size: 3em;
 }
 
 a {
   color: #00B7FF;
+}
+
+li {
+  list-style: none;
+  padding: 9px;
+  font-size: 1.5em;
+}
+
+input {
+  width: 100%;
+}
+
+button {
+  border: 0.2em solid #CCCCCC;
+  font-weight: bold;
+}
+
+.show-buttons {
+  margin: 5px;
+}
+
+#new-skill {
+  margin: 10px 0px 0px 0px;
+  position: relative;
+}
+
+#add-skill {
+  margin-right: 100px;
+  font-size: 1.2em;
+  color: #383989;
+}
+
+#delete {
+  color: red;
+}
+
+#edit {
+  color: #2124DE;
+  margin: 10px 0px 0px 0px;
+}
+
+#home {
+  margin-right: auto;
+  margin-top: 10px;
 }
